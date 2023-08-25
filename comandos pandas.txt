@@ -1,0 +1,35 @@
+.head() pega apenas os 5 primeiros itens 
+.tail() pega apenas os 5 ultimos itens 
+pd.read_csv() lê um arquivo csv passando seus parametros no parenteses
+pd.read_csv(sep='separador',nrows='numero de linhas que deseja retornar',usecols='colunas que deseja retornar')
+.shape me retorna a quantidade de linhas e colunas de uma consulta
+.columns retorna as colunas de uma consulta 
+['coluna'].mean() calcula a media de uma coluna especifica 
+.groupby() agroupa a partir do metodo passado entre parenteses
+.sort_values() ordena do menor para o maior passando a coluna nos parenteses
+.unique() pega valores unicos passados dentro do parenteses
+.query('@variavel in ou not in coluna') retorna uma query(tipo sql) contendo tudo q tem na coluna do tipo especificado
+.value_counts() pega a quantidade de vezes que uma determinada coisa aparece 
+.to_frame() transforma em dataframe
+.isnull() retorna valores  em bool se sao nulos ou nao. se for nulo retorna true se nao for retorna false
+.fillna() substitui valores nulos colocando-os entre parenteses
+.drop(variavel, axis = 0 ou 1) é utilizado para remover tanto linhas quanto colunas. #0 remove linhas 1 remove colunas
+.to_csv('nome do arquivo que deseja salvar.csv') transforma em csv um arquivo
+sheet_name = 'nome do arquivo que desejo ler'
+.info() retorna as informacoes do dataframe 
+.melt(id_vars=colunas que devem ser fixas, value_vars=lista de coluna que deseja derreter, 
+var_name= nome da coluna que armazenará as colunas derretidas, 
+value_name=O nome da nova coluna que armazenará os valores correspondentes. ) agrupa diversas colunas em uma só
+
+.get_group("Valor da coluna) agrupa por esse filtro (GERALMENTE UTILIZADO COM UM METODO GROUPBY ANTES)
+.idxmax() pega o indice maximo de uma coluna
+.swaplevel() troca a ordem dos indices das colunas
+.astype(tipo) transforma uma coluna em um tipo ... ex > astype(int)
+.assign() permite criar novas colunas num data_Frame
+.explode() separa elementos para se transformar em linhas
+.reset_index(inplace=true or false,drop=true or false) reseta os indices
+.apply()
+.applymap()
+.to_datetime() transforma em data
+.strftime() formata as datas
+.drop_duplicates() tira as duplicacoes de colunas
